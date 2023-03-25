@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    .buttom{
+        background-color: greenyellow;
+        width: 80;
+        border: 15px;
+        padding: 20px 32px;
+        text-align: center;
+        color: rgb(29, 23, 15);
+        font-size: 26px;
+        margin: auto;
+        
+    }
+</style>
+    <script>
+        function confirmacion() {
+            var pregunta = confirm("Deseas visitar esta pagina?")
+            if (pregunta){
+                alert("Ya estas por ingresar a la pagina")
+                window.location = "https://www.youtube.com";
+            }
+            else{
+                alert("Quizas en otro momento...\n Gracias de todas formas")
+            }
+        }
+        </script>
+        <center>
+            <button class="buttom" type="button" onclick="confirmacion()" >Ir a la pagina...</button>
+        </center>
+</html> 
